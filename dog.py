@@ -2,11 +2,11 @@ from animal import Animal
 
 class Dog(Animal):
 
-    def __init__(self,eat,sound):
-        super().__init__(eat,sound)
+    def __init__(self,name,sound):
+        super().__init__(name,sound)
 
     def food(self):
-        print(self.eat + " eats")
+        print(self.name + " eats")
 
     def sounds(self):
         print(self.sound + "barks")

@@ -1,11 +1,11 @@
 class Animal:
 
-    def __init__(self,eat,sound):
-        self.eat = eat
+    def __init__(self,name,sound):
+        self.name = name
         self.sound = sound
 
     def food(self):
-        print("{0} eats".format(self.eat))
+        print("{0} eats".format(self.name))
 
 
     def sounds(self):
