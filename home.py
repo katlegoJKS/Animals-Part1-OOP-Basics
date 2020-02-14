@@ -11,16 +11,18 @@ class Home:
         for each_pet in self.pets:
             if each_pet == pet:
                 raise Exception("You cannot adopt the same pet twice")
-            self.pets.append(pet)
+        self.pets.append(pet)
 
-    def make_all_sounds():
-        return dog1.food()
+    #def make_all_sounds():
+        #return dog1.food()
 
-home = Home()
-dog1 = Dog("Rax","barks")
-cat1 = Cat("Stormy","meows")
-home.adopt_pet(dog1)
-home.adopt_pet(cat1)
-
-print("Current pets: ")
-print(home.pets)
+if __name__=="__main__":
+    home = Home()
+    dog_1 = Dog("Rax","barks")
+    cat_1 = Cat("Stormy","meows")
+    home.adopt_pet(dog_1)
+    #home.adopt_pet(cat_1)
+    home.adopt_pet(cat_1)
+    print("\nCurrent pets: ")
+    print(home.pets[0].name)
+    print(home.pets[1].name)
