@@ -5,7 +5,7 @@ from cat import Cat
 class testAnimal(unittest.TestCase):
 
     def setUp(self):
-        print('Pass')                               #Test results
+        print('Pass')                               #If test is true then return Pass
         self.dog1 = Animal('Food','Bark')           #defines string to objects 'dog1' and 'cat1'
         self.cat1 = Animal('Food','Meow')
 
