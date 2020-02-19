@@ -5,12 +5,12 @@ class Cat(Animal):
     def __init__(self,name,sound):
         super().__init__(name,sound)
 
-    def food(self):
-        print(self.name + " eats")
+    #def eats(self):
+        #return self.name
 
-    def sounds(self):
-        print(self.name + "meows")
+    #def sounds(self):
+        #return "Meow"
 
 cat1 = Cat("Stormy ","")
-cat1.food()
-cat1.sounds()
+#print(cat1.eats(),"eats")
+#print(cat1.sounds())

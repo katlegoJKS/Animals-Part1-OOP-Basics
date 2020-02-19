@@ -4,21 +4,21 @@ class Animal:
         self.name = name
         self.sound = sound
 
-    def food(self):
-        print("{0} eats".format(self.name))
+    def eats(self):
+        return "Food"
 
 
     def sounds(self):
-        print("{0}".format(self.sound))
+        return self.sound
 
 
     
-dog = Animal("Rax","Dog barks")
+dog = Animal('Rax','barks')
 
-#dog.food()
-#dog.sounds()
+#print(dog.eats())
+#print(dog.sounds())
 
-cat = Animal("Stormy","Cat meows")
+cat = Animal("Stormy","meows")
 
-#cat.food()
-#cat.sounds()
+#print(cat.eats())
+#print(cat.sounds())
