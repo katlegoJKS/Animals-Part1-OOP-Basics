@@ -1,11 +1,11 @@
 class Animal:
 
-    def __init__(self,name,sound):
-        self.name = name
+    def __init__(self,eat,sound):
+        self.eat = eat
         self.sound = sound
 
     def eats(self):
-        return "Food"
+        return self.eat
 
 
     def sounds(self):
@@ -16,9 +16,11 @@ class Animal:
 dog = Animal('Rax','barks')
 
 #print(dog.eats())
-#print(dog.sounds())
+print("dog",dog.sounds())
 
 cat = Animal("Stormy","meows")
 
 #print(cat.eats())
-#print(cat.sounds())
+print("cat",cat.sounds())
+print('')
+

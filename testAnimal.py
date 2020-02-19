@@ -1,25 +1,29 @@
 import unittest
 from animal import Animal
+from cat import Cat
 
 class testAnimal(unittest.TestCase):
 
     def setUp(self):
-        print('setUp')
+        print('Pass')
         self.dog1 = Animal('Food','Bark')
         self.cat1 = Animal('Food','Meow')
 
     def test_dog_sound(self):
-        print('test sound')
-        self.assertEqual(False,self.dog1.sounds == 'Bark')
+        print('Does Dog bark')
+        self.assertEqual(self.dog1.sound,'Bark')
 
     def test_dog_eats(self):
-        self.assertEqual(False,self.dog1.eats == 'Food')
+        print('Does Dog eat food')
+        self.assertEqual(self.dog1.eat,'Food')
 
     def test_cat_sound(self):
-        self.assertEqual(False,self.cat1.sounds == 'Meow')
+        print("Does cat meow")
+        self.assertEqual(self.cat1.sound,'Meow')
 
     def test_cat_eats(self):
-        self.assertEqual(False,self.cat1.eats == 'Food')
+        print('Does cat eat food')
+        self.assertEqual(self.cat1.eat,'Food')
 
 if __name__ == "__main__":
     unittest.main()
