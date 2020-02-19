@@ -11,6 +11,6 @@ class Dog(Animal):
     def sounds(self):
         return "Bark"
 
-dog1 = Dog("","")
+dog1 = Dog('','')
 #print(dog1.eats())
 #print(dog1.sounds())
