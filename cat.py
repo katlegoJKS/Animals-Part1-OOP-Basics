@@ -11,6 +11,6 @@ class Cat(Animal):
     def sounds(self):
         return "Meow"
 
-cat1 = Cat("","")
+cat1 = Cat('','')
 #print(cat1.eats())
 #print(cat1.sounds())
