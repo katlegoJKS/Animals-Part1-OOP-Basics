@@ -5,13 +5,13 @@ from cat import Cat
 class testAnimal(unittest.TestCase):
 
     def setUp(self):
-        print('Pass')
-        self.dog1 = Animal('Food','Bark')
+        print('Pass')                               #Test results
+        self.dog1 = Animal('Food','Bark')           #defines string to objects 'dog1' and 'cat1'
         self.cat1 = Animal('Food','Meow')
 
     def test_dog_sound(self):
-        print('Does Dog bark')
-        self.assertEqual(self.dog1.sound,'Bark')
+        print('Does Dog bark')                      #Test question
+        self.assertEqual(self.dog1.sound,'Bark')    #assert that the two arguments are equal to be true
 
     def test_dog_eats(self):
         print('Does Dog eat food')
